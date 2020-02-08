@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-const slectedSelctor = props => (props.selected ? "brightness(130%)" : "");
+const slectedSelctor = props =>
+  props.selected
+    ? "brightness(130%) drop-shadow(5px 5px 3px #ddd)"
+    : "drop-shadow(2px 2px 3px #ddd)";
 
 export const ButtonPrimary = styled.button`
   padding: 1rem;
@@ -13,10 +16,10 @@ export const ButtonPrimary = styled.button`
   min-width: 10em;
   height: 50px;
   cursor: pointer;
-  filter: ${slectedSelctor} drop-shadow(2px 2px 2px #ddd);
+  filter: ${slectedSelctor};
 
   &:hover {
-    filter: brightness(110%) drop-shadow(4px 4px 2px #ddd);
+    filter: brightness(110%) drop-shadow(5px 5px 3px #ddd);
   }
   &:active {
     background-color: var(--accent-primary);

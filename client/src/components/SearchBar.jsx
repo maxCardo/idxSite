@@ -31,7 +31,7 @@ const SearchInput = styled.input`
   font-family: var(--primary-font-family);
   font-weight: 300;
   font-size: 24pt;
-  filter: drop-shadow(5px 5px 3px #ddd);
+  filter: drop-shadow(5px 5px 3px #ddd) drop-shadow(-5px -5px 3px #eee);
 `;
 
 const BuyRentButton = styled(ButtonPrimary)`
@@ -60,15 +60,15 @@ const SearchBar = () => {
         Rent
       </BuyRentButton>
       <br />
-      <SearchForm action="https://ouridxsubdomain.ourdomain.com/idx/results/listings">
+      <SearchForm action="//tlgmgmt.idxbroker.com/idx/results/listings">
         <SearchInput
           id="search"
           autocomplete="off"
-          class="IDX-input input tooltipstered ui-autocomplete-input"
+          className="IDX-input input tooltipstered ui-autocomplete-input"
           type="text"
         />
         <label
-          for="search-button"
+          htmlFor="search-button"
           style={{
             marginBottom: 0,
             marginTop: "1rem"

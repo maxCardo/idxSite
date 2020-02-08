@@ -43,6 +43,11 @@ export const NavLink = styled(Link)`
   }
 `;
 
+export const NoStyleLink = styled(Link)`
+  color: inherit;
+  text-decoration: none;
+`;
+
 const onLight = elm => styled(elm)`
   color: var(--bg-darker);
 `;

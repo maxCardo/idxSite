@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { HeroTitle, Text, NavLink } from "./TextElements";
+import { HeroTitle, Text, NavLink, NoStyleLink } from "./TextElements";
 
 const MenuBar = styled.nav`
   min-height: 64px;
@@ -24,12 +24,14 @@ const Group = styled.span`
  */
 export default () => (
   <MenuBar>
+    <NoStyleLink to="/">
+      <Group>
+        <HeroTitle>MaxCardo</HeroTitle>
+        <Text>ltd</Text>
+      </Group>
+    </NoStyleLink>
     <Group>
-      <HeroTitle>MaxCardo</HeroTitle>
-      <Text>ltd</Text>
-    </Group>
-    <Group>
-      <NavLink>Menu Link 1</NavLink>
+      <NavLink to="/map-search">Map Search</NavLink>
       <NavLink>Menu Link 2</NavLink>
       <NavLink>Menu Link 3</NavLink>
     </Group>
