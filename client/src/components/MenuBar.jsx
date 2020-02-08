@@ -11,6 +11,8 @@ const MenuBar = styled.nav`
   align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap;
+  box-sizing: content;
+  border-bottom: 1px solid #000;
 `;
 
 const Group = styled.span`
