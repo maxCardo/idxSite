@@ -30,7 +30,7 @@ const SearchInput = styled.input`
   padding-left: 1rem;
   font-family: var(--primary-font-family);
   font-weight: 300;
-  font-size: 24pt;
+  font-size: var(--font-size-medium);
   filter: drop-shadow(5px 5px 3px #ddd) drop-shadow(-5px -5px 3px #eee);
 `;
 
@@ -48,7 +48,9 @@ const SearchBar = () => {
   const onClickRent = () => setRentToggle(false);
   return (
     <SearchContainer>
-      <SubTitleOnLight>Search For Properties</SubTitleOnLight>
+      <SubTitleOnLight style={{ marginTop: 0 }}>
+        Search For Properties
+      </SubTitleOnLight>
       <BuyRentButton
         selected={rentToggle}
         onClick={onClickBuy}

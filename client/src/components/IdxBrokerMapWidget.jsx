@@ -1,5 +1,13 @@
 import React, { Component, Fragment } from "react";
+import styled from "styled-components";
 import Helmet from "react-helmet";
+
+const GridSlot = styled.div`
+  grid-row: span 2;
+  grid-column: span 3;
+  overflow: hidden;
+  filter: drop-shadow(5px 5px 5px #222);
+`;
 
 export default class IdxMapSearchWidget extends Component {
   constructor(props) {
@@ -15,16 +23,6 @@ export default class IdxMapSearchWidget extends Component {
       }
     });
   }
-
-  //componentWillUnmount() {
-  //  let target = document.getElementById("#del-container");
-  //  if (target)
-  //    target.childNodes.forEach(child => {
-  //      if (child.id != "idxwidgetsrc-15999") {
-  //        target.removeChild(child);
-  //      }
-  //    });
-  //}
 
   render() {
     return (
@@ -61,9 +59,9 @@ export default class IdxMapSearchWidget extends Component {
             ""
           )}
         </Helmet>
-        <div id="del-container">
+        <GridSlot id="del-container">
           <div id="idxwidgetsrc-15999" />
-        </div>
+        </GridSlot>
       </Fragment>
     );
   }

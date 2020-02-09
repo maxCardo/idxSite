@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const HeroTitle = styled.h1`
   font-family: var(--primary-font-family);
   font-weight: 400;
-  font-size: 36pt;
+  font-size: var(--font-size-large);
   color: var(--bg-lighter);
   padding: 0;
   margin: 1rem;
@@ -14,21 +13,21 @@ export const HeroTitle = styled.h1`
 export const SubTitle = styled.h2`
   font-family: var(--primary-font-family);
   font-weight: 300;
-  font-size: 24pt;
+  font-size: var(--font-size-medium);
   color: var(--bg-lighter);
 `;
 
 export const Text = styled.p`
   font-family: var(--primary-font-family);
   font-weight: 100;
-  font-size: 14pt;
+  font-size: var(--font-size-small);
   color: var(--bg-lighter);
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.a`
   font-family: var(--primary-font-family);
   font-weight: 300;
-  font-size: 14pt;
+  font-size: var(--font-size-small);
   color: var(--bg-lighter);
   margin: 1rem;
   text-decoration: none;
@@ -43,7 +42,7 @@ export const NavLink = styled(Link)`
   }
 `;
 
-export const NoStyleLink = styled(Link)`
+export const NoStyleNavLink = styled.a`
   color: inherit;
   text-decoration: none;
 `;
