@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MapSearch from "../components/IdxBrokerMapWidget";
+import MapSearch from "../IDXBrokerWidgets/IdxBrokerMapWidget";
 import HomeCard from "../components/PropertyCard";
 
 const MapSearchContainer = styled.div`

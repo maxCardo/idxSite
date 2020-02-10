@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { TextOnLight } from "./TextElements";
+import { TextOnLight } from "../styled-components/TextElements";
 
 const ContainerStyles = styled.div`
   grid-column: span 1;

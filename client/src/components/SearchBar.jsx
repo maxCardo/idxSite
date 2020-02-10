@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { SubTitleOnLight } from "./TextElements";
-import { ButtonPrimary } from "./Buttons";
+import { SubTitleOnLight } from "../styled-components/TextElements";
+import { ButtonPrimary } from "../styled-components/Buttons";
 
 const SearchContainer = styled.div`
   background-color: var(--bg-light);

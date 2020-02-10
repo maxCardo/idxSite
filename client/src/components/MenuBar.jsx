@@ -30,12 +30,14 @@ const LandingUrl =
   process.env.NODE_ENV === "production"
     ? process.env.PUBLIC_URL
     : process.env.LOCAL_URL;
+
+
 /**
  * @type {React.FC}
  */
 export default () => (
   <MenuBar>
-    <NoStyleNavLink>
+    <NoStyleNavLink href={LandingUrl}>
       <Group>
         <HeroTitle>MaxCardo</HeroTitle>
         <Text>ltd</Text>

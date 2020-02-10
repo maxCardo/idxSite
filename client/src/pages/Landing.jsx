@@ -8,7 +8,9 @@ import SearchBar from "../components/SearchBar";
  */
 const Landing = () => (
   <ParalaxContainer>
-    <SearchBar />
+    <CenteredContainer>
+      <SearchBar />
+    </CenteredContainer>
   </ParalaxContainer>
 );
 
