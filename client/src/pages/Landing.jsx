@@ -1,10 +1,6 @@
 import React, { Fragment } from "react";
-import {
-  ParalaxContainer,
-  ParalaxSection,
-  StaticSection
-} from "../components/ParalaxContainer";
-import { SubTitle } from "../components/TextElements";
+import { CenteredContainer } from "../styled-components/Containers";
+import { SubTitle } from "../styled-components/TextElements";
 import SearchBar from "../components/SearchBar";
 
 /**
@@ -12,15 +8,7 @@ import SearchBar from "../components/SearchBar";
  */
 const Landing = () => (
   <ParalaxContainer>
-    <ParalaxSection
-      imageUrl={"ht_pit_11.jpg"}
-      imageFilter={"hue-rotate(-30deg);"}
-    >
-      <SearchBar />
-    </ParalaxSection>
-    <StaticSection background={"#000"}>
-      <SubTitle>test 2</SubTitle>
-    </StaticSection>
+    <SearchBar />
   </ParalaxContainer>
 );
 

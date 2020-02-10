@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { HeroTitle, Text, NavLink, NoStyleNavLink } from "./TextElements";
+import {
+  HeroTitle,
+  Text,
+  NavLink,
+  NoStyleNavLink
+} from "../styled-components/TextElements";
 
 const MenuBar = styled.nav`
   min-height: 64px;
@@ -21,19 +26,23 @@ const Group = styled.span`
   align-items: baseline;
 `;
 
+const LandingUrl =
+  process.env.NODE_ENV === "production"
+    ? process.env.PUBLIC_URL
+    : process.env.LOCAL_URL;
 /**
  * @type {React.FC}
  */
 export default () => (
   <MenuBar>
-    <NoStyleNavLink to="/">
+    <NoStyleNavLink>
       <Group>
         <HeroTitle>MaxCardo</HeroTitle>
         <Text>ltd</Text>
       </Group>
     </NoStyleNavLink>
     <Group>
-      <NavLink href="%PUBLIC_URL%/map-search">Map Search</NavLink>
+      <NavLink>Map Search</NavLink>
       <NavLink>Menu Link 2</NavLink>
       <NavLink>Menu Link 3</NavLink>
     </Group>
